@@ -1,0 +1,16 @@
+%centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+%marginLR-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

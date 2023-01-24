@@ -1,0 +1,37 @@
+<div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="feedback-modal">
+
+        <button class="button-modal-close" data-modal-close>
+            <svg class="button-modal-close__icon" width="22" height="22">
+                <use
+                  href="./images/sprite.svg#close"
+                ></use>
+              </svg>
+        </button>
+
+        <h2 class="feedback-modal__title">Введите Ваши контактные данные</h2>
+        <form class="feedback-modal__form" autocomplete="on">
+            <label class="feedback-modal__label">Ваше имя*
+                <input
+                  class="feedback-modal__input"
+                  type="text"
+                  name="name"
+                  autofocus
+                  placeholder="Ваше имя"
+                />
+              </label>
+
+              <label class="feedback-modal__label">Ваш телефон:*
+                <input
+                  class="feedback-modal__input"
+                  type="number"
+                  name="phone number"
+                  autofocus
+                  placeholder="+7**********"
+                />
+              </label>
+
+              <button class="feedback-modal__button">Записаться на ремонт</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+.steps__title {
+    display: block;
+    width: 200px;
+    @extend %marginLR-auto;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+    text-align: center;
+
+    margin-bottom: 27px
+}
+
+.steps-list {
+    @extend %list;
+}
+
+.steps-list__item {
+
+}
+
+.steps-list__thumb {
+    display: flex;
+    justify-content: center;
+}
+
+.steps-list__number {
+    left: 0;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 1.17;
+    text-transform: uppercase;
+
+    transform: translateX(30px);
+
+    color: #D4E4EF;
+}
+
+.steps-list__img {
+    width: 152px;
+    height: 151px;
+    margin-right: 40px;
+}
+
+.steps-list__text {
+    display: block;
+    width: 250px;
+    @extend %marginLR-auto;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.steps-list__icon-tochki {
+    display: none;
+}
+
+.steps-list__icon-tochki-vpravo {
+    display: block;
+    width: 43px;
+    height: 47px;
+    @extend %marginLR-auto;
+    margin-bottom: 10px;
+    transform: rotate(90deg);
+}
