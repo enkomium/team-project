@@ -3,12 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Ремонт мобильных телефонов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
+    <script type="module" src="./menu.js"></script>
+    <script type="module" src="./mobile-contact.js"></script>
+    <script type="module" src="./submenu.js"></script>
+    <script type="module" src="./backdrop.js"></script>
+    <script type="module" src="./modal-search.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+      <header class="header">
+        <div class="container">
+          <include src="./partials/header-mobile.html"></include>
+        <div class="mobile-menu-nav" id="button-burger" data-menu>
+          <include src="./partials/nav.html"></include>
+          <include src="./partials/repair-filter.html"></include>
+        </div>
+    </div>
+    </header>
+      <section class="section-device-search">
+          <include src="./partials/device-form.html"></include>
+      </section>
+      <section class="section-hero">
+        <include src="./partials/hero.html"></include>
+      </section>
+      <section class="section-steps">
+        <div class="container">
+          <include src="./partials/steps.html"></include>
+        </div>
+      </section>
+      <section class="section-advantages">
+        <div class="container">
+          <include src="./partials/advantages.html"></include>
+        </div>
+      </section>
+    
+    <include src="./partials/feedback.html"></include>
   </body>
 </html>
