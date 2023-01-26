@@ -1,0 +1,94 @@
+.map {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.map::after {
+    content: " ";
+
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+
+}
+
+// /////////////////////////////////////////////------СКРЫТИЕ ТЕКСТА!!!-----////////////////////////////////////////////////////////////
+
+.block-text {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.block-text__input {
+    position: absolute;
+    opacity: 0;
+}
+
+.block-text__limiter {
+    position: relative;
+    overflow: hidden;
+    max-height: 121px;
+}
+
+.block-text__bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    opacity: 1;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.61) 0%, #FFFFFF 100%);
+
+    transition: opacity 300ms;
+}
+
+.block-text__label {
+    display: inline-flex;
+    cursor: pointer;
+
+    margin-top: 3px;
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.block-text__input:checked ~ .block-text__limiter {
+    max-height: none;
+  }
+
+.block-text__input:checked ~ .block-text__limiter .block-text__bottom {
+    opacity: 0;
+    transition: 300ms;
+}
+
+.block-text__input ~ .block-text__label::after {
+    content: "Развернуть";
+}
+
+.block-text__input:checked ~ .block-text__label::after {
+    content: "свернуть";
+}
+
+// //////////////////////////////////////////----------СТРЕЛКА ВВЕРХ-----------/////////////////////////////////////////////////////////
+
+.section-map__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    margin-top: 2px;
+
+    border-radius: 50%;
+    background-color: rgba(55, 69, 97, 0.05);;
+}
+
+.section-map__icon {
+    width: 24px;
+    height: 24px;
+}
