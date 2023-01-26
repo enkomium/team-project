@@ -1,0 +1,167 @@
+.footer-thumb {
+    width: 100%;
+}
+
+.footer-thumb__separate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-thumb__social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 28px;
+}
+
+.footer-logo {
+    display: flex;
+    width: 91px;
+    height: 19px;
+    margin-bottom: 16px;
+
+    background-image: url(../images/logo-mobile.png);
+    background-position: center;
+    background-size: cover
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 155px;
+    height: auto;
+}
+
+.footer__link-text {
+    display: inline-flex;
+    margin-top: 2px;
+    margin-right: 14px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    text-decoration-line: underline;
+
+    color: var(--text-accent-color);
+}
+
+.footer__link-tel {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 3px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14px;
+
+    color: var(--secondary-text-color);
+
+    text-decoration: none;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__icon-tel {
+    display: none;
+    // width: 16px;
+    // height: 16px;
+
+    // fill: #737D90;
+
+    // margin-right: 13px;
+}
+
+.footer__icon-whatsapp {
+    width: 13px;
+    height: 13px;
+
+    margin-left: 9px;
+
+    fill: #33D16B;
+}
+
+.footer__icon-viber {
+    width: 13px;
+    height: 13px;
+
+    margin-left: 9px;
+
+    fill: #7B539C;
+}
+
+.footer-address {
+    display: none;
+}
+
+.footer-address__link {
+    display: flex;
+    margin-top: 6px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration-line: underline;
+
+    color: var(--secondary-text-color);
+}
+
+.footer-address__icon {
+    display: none;
+}
+
+.footer-address__text {
+    display: block;
+    width: 80px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.18;
+
+    color: var(--secondary-text-color);
+    opacity: 0.7;
+}
+
+.footer-information {
+    display: none;
+}
+
+.footer-services {
+    display: none;
+}
+
+.social-list-mobile {
+    display: flex;
+    @extend %list;
+}
+
+.social-list {
+    display: none;
+    @extend %list;
+}
+
+.social-list__item {
+    margin-right: 16px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+.social-list__icon {
+    width: 20px;
+    height: 17px;
+}

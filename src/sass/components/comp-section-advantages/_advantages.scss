@@ -51,6 +51,10 @@
 }
 
 .advantages-list__text {
+    display: block;
+    width: 200px;
+    @extend %marginLR-auto;
+
     font-weight: 700;
     font-size: 15px;
     line-height: 1.2;
