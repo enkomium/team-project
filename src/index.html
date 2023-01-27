@@ -12,43 +12,30 @@
     <script type="module" src="./submenu.js"></script>
     <script type="module" src="./backdrop.js"></script>
     <script type="module" src="./modal-search.js"></script>
+    <script type="module" src="./modal-thanks.js"></script>
   </head>
   <body>
       <header class="header">
         <div class="container">
           <include id="top" src="./partials/header-mobile.html"></include>
         <div class="mobile-menu-nav" id="button-burger" data-menu>
-          <include src="./partials/nav.html"></include>
-          <include src="./partials/repair-filter.html"></include>
+          <include src="./partials/header-nav.html"></include>
+          <include src="./partials/header-repair-filter.html"></include>
         </div>
     </div>
     </header>
-      <section class="section-device-search">
-          <include src="./partials/device-form.html"></include>
-      </section>
-      <section class="section-hero">
-        <include src="./partials/hero.html"></include>
-      </section>
-      <section class="section-steps">
-        <div class="container">
-          <include src="./partials/steps.html"></include>
-        </div>
-      </section>
-      <section class="section-advantages">
-        <div class="container">
-          <include src="./partials/advantages.html"></include>
-        </div>
-      </section>
-      <section class="section-promotions">
-        <div class="container">
-          <include src="./partials/promotions.html"></include>
-        </div>
-      </section>
-      
-        <include src="./partials/section-map.html"></include>
-    
-    <include src="./partials/feedback.html"></include>
+      <include src="./partials/section-device-search.html"></include>
 
-    <include src="./partials/footer.html"></include>
+        <include src="./partials/section-hero.html"></include>
+
+          <include src="./partials/section-steps.html"></include>
+
+            <include src="./partials/section-advantages.html"></include>
+
+              <include src="./partials/section-promotions.html"></include>
+
+                <include src="./partials/section-map.html"></include>
+
+                  <include src="./partials/footer.html"></include>
   </body>
 </html>

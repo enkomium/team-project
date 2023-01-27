@@ -1,0 +1,59 @@
+<section class="section-hero">
+    <div class="hero">
+    <div class="hero__text-container">
+        <h1 class="hero__title">Ремонт телефонов любой
+            сложности</h1>
+            <p class="hero__text">Ваш любимый гаджет сломался? Вернем его к жизни
+                в кратчайшие сроки и по доступной цене!</p>
+    </div>
+    <button class="hero__button" data-modal-open>Записаться на ремонт</button>
+    </div>
+    
+<!-- /////////////////////////////Обратная свлязь!//////////////////////////////////////////////////////////// -->
+
+    <div class="backdrop backdrop--is-hidden" data-modal>
+        <div class="feedback-modal">
+    
+            <button class="button-modal-close" data-modal-close>
+                <svg class="button-modal-close__icon" width="22" height="22">
+                    <use
+                      href="./images/sprite.svg#close"
+                    ></use>
+                  </svg>
+            </button>
+    
+            <h2 class="feedback-modal__title">Введите Ваши контактные данные</h2>
+            <form class="feedback-modal__form" autocomplete="on">
+                <label class="feedback-modal__label">Ваше имя*
+                    <input
+                      class="feedback-modal__input"
+                      type="text"
+                      name="name"
+                      autofocus
+                      placeholder="Ваше имя"
+                    />
+                  </label>
+    
+                  <label class="feedback-modal__label">Ваш телефон:*
+                    <input
+                      class="feedback-modal__input"
+                      type="number"
+                      name="phone number"
+                      autofocus
+                      placeholder="+7**********"
+                    />
+                  </label>
+    
+                  <button class="feedback-modal__button" data-modal-thanks-open onclick="return false;">Записаться на ремонт</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="backdrop-thanks backdrop--is-hidden" data-modal-thanks>
+        <div class="window_thanks">
+          <h2 class="window_thanks__title">Спасибо!</h2>
+          <p class="window_thanks__text">Роман свяжется с Вами в самое ближайшее время.</p>
+          <button class="window_thanks__button" type="button" data-modal-thanks-close>ОК</button>
+        </div>
+    </div>
+</section>
