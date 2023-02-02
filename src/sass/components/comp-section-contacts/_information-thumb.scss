@@ -1,0 +1,118 @@
+.information-thumb {
+
+}
+
+// /////////////////////////----------СПИСОК С ИНФОРМАЦИЕЙ О РАБОТЕ, ВРЕМЕНИ И ЭЛ.ПОЧТЕ----------///////////////////////////////
+
+.information-list {
+    @extend %list;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.information-list__item {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.information-list__icon{
+    width: 23px;
+    height: 23px;
+
+    fill: var(--accent-color);
+
+    margin-right: 9px;
+}
+
+.information-list__text {
+    margin-bottom: 5px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+
+    color: var(--secondary-text-color);
+}
+
+.information-list__text:last-child {
+    margin-bottom: 0;
+}
+
+.information-list__text-accent {
+    font-weight: 700;
+}
+
+.information-list__tel {
+    display: block;
+    margin-bottom: 5px;
+
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.17;
+    text-decoration: none;
+
+    color: var(--secondary-text-color);
+}
+
+.information-list__tel:last-child {
+    margin-bottom: 0;
+}
+
+.information-list__mail {
+    display: flex;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.17;
+    text-decoration: none;
+
+    color: var(--secondary-text-color);
+}
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// //////////////////////--------------------------СПИСОК CОЦИАЛЬНЫХ СЕТЕЙ------------------------------//////////////////////////
+
+.social-list__contacts {
+    @extend %list;
+    display: flex;
+}
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// ////////////////////////////-------------------------ТЕКСТ С АДРЕСОМ---------------------------------///////////////////////////
+
+.contacts-address {
+    margin-top: 27px;
+    margin-bottom: 181px;
+}
+
+.contact-address__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.19;
+}
+
+.contact-address__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// //////////////////////-----------------------ФОТОГРАФИЯ МАГАЗИНА-------------------------------/////////////////////////////////
+
+.contacts-image {
+    position: absolute;
+    left: 0;
+    top: 388px;
+    display: block;
+    width: 100%;
+    min-height: 171px;
+    background-image: url(../images/section-contacts/b14ee693-dceb-540d-a23a-a98cbc210376.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
