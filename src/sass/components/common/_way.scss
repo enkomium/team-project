@@ -1,0 +1,16 @@
+.way {
+}
+
+.way__link {
+    display: inline-flex;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.15;
+    text-decoration-line: underline;
+
+    color: var(--secondary-text-color);
+}
+
+.way__link:last-child {
+    text-decoration: none;
+}

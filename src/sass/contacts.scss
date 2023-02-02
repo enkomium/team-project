@@ -1,0 +1,21 @@
+@import './base/variables';
+@import './base/normalize';
+@import './base/global-values';
+@import './utils/placeholder';
+@import './components/common/container';
+@import './components/common/logo';
+@import './layout/header';
+@import './components/comp-header/header-mobile';
+@import './components/comp-header/nav';
+@import './components/comp-header/repair-filter';
+@import './components/common/way';
+@import './components/comp-section-contacts/section-contacts';
+@import './components/comp-section-contacts/information-thumb';
+@import './components/comp-section-advantages/advantages';
+
+
+@import './components/comp-sectiom-map/section-map';
+@import './components/comp-sectiom-map/map';
+@import './layout/footer';
+@import './components/comp-footer/footer';
+@import './common';
