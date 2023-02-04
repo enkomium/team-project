@@ -1,0 +1,19 @@
+.service-map {
+    position: absolute;
+    left: 0;
+    bottom: -1177px;
+    width: 100%;
+    padding-top: 19px;
+
+    box-shadow: 0px 0px 10px rgba(0, 37, 74, 0.2);
+    border-radius: 4px;
+}
+
+.service-map__title {
+    margin-bottom: 19px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}

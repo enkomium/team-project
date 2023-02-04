@@ -1,0 +1,49 @@
+.list-devices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @extend %list;
+    padding-top: 20px;
+    padding-bottom: 55px;
+}
+
+.list-devices__item {
+    display: block;
+    width: 120px;
+    min-height: 173px;
+    margin-right: 40px;
+    margin-bottom: 33px;
+}
+
+.list-devices__item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.list-devices__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+}
+
+.project-card__img {
+    height: 129px;
+}   
+
+.project-card__link {
+    display: block;
+    margin-top: 16px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+}
+
+.project-card__button {
+    display: none;
+}
+
+.red-color {
+    color: rgb(3, 230, 135);
+}

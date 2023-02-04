@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ремонт мобильных телефонов</title>
+    <title>Ремонт телефонов Samsung</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="./sass/phone-repair.scss" />
     <script type="module" src="./index.js"></script>
     <script type="module" src="./menu.js"></script>
     <script type="module" src="./mobile-contact.js"></script>
@@ -25,30 +25,20 @@
     </div>
     </header>
       <main>
-        <include src="./partials/section-device-search.html"></include>
+        <include src="./partials/phone-repair/section-phone-repair.html"></include>
 
-        <include src="./partials/section-hero.html"></include>
+        <section class="section-advantages">
+          <div class="container">
+            <include src="./partials/section-advantages.html"></include>
+            <a class="section-map__link" href="#top">
+              <svg class="section-map__icon">
+                  <use href="./images/sprite.svg#strelka-vverh"></use>
+                </svg>
+          </a>
+          </div>
+        </section>
 
-          <section class="section-steps">
-            <div class="container">
-              <include src="./partials/section-steps.html"></include>
-            </div>
-          </section>
-
-          <section class="section-advantages">
-            <div class="container">
-              <include src="./partials/section-advantages.html"></include>
-              <button class="advantages-button" type="submit">Записаться на ремонт</button>
-              <button class="advantages-button accent" type="submit">Узнать стоимость</button>
-            </div>
-          </section>
-            
-
-              <include src="./partials/section-promotions.html"></include>
-
-                <include src="./partials/section-map.html"></include>
-
-                  <include src="./partials/footer.html"></include>
+        <include src="./partials/footer.html"></include>
       </main>
   </body>
 </html>

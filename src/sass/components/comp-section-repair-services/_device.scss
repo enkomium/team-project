@@ -1,0 +1,22 @@
+.device {
+    margin-top: 23px;
+    margin-bottom: 1202px;
+}
+
+// .device__thumb {
+
+// }
+
+.device__img {
+    height: 160px;
+    @extend %marginLR-auto;
+}
+
+.device__text {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+    text-align: center;
+
+    margin-top: 13px;
+}

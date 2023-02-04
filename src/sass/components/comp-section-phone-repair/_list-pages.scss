@@ -1,0 +1,37 @@
+.list-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %list;
+    margin-top: 35px;
+}
+
+.list-pages__item {
+    margin-right: 24px;
+}
+
+.list-pages__item:last-child {
+    margin-right: 0;
+}
+
+.list-pages__link {
+    display: flex;
+
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+}
+
+.list-pages__link__icon {
+    width: 20px;
+    height: 17px;
+
+    fill: var(--primary-text-color);
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
