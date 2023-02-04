@@ -9,9 +9,13 @@
 @import './components/comp-header/nav';
 @import './components/comp-header/repair-filter';
 @import './components/common/way';
-@import './components/comp-section-contacts/section-contacts';
-@import './components/comp-section-contacts/information-thumb';
-
+@import './components/comp-section-repair-services/section-repair-services';
+@import './components/comp-section-repair-services/device';
+@import './components/comp-section-repair-services/services-form';
+@import './components/comp-section-repair-services/service-cost';
+@import './components/comp-section-repair-services/service-map';
+@import './components/comp-section-steps/section-steps';
+@import './components/comp-section-steps/steps';
 
 @import './components/comp-section-advantages/advantages';
 @import './components/comp-sectiom-map/section-map';

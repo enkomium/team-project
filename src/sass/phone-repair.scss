@@ -9,10 +9,11 @@
 @import './components/comp-header/nav';
 @import './components/comp-header/repair-filter';
 @import './components/common/way';
-@import './components/comp-section-contacts/section-contacts';
-@import './components/comp-section-contacts/information-thumb';
+@import './components/comp-section-phone-repair/section-phone-repair';
+@import './components/comp-section-phone-repair/list-devices';
 
-
+@import './components/comp-section-phone-repair/section-pr__button';
+@import './components/comp-section-phone-repair/list-pages';
 @import './components/comp-section-advantages/advantages';
 @import './components/comp-sectiom-map/section-map';
 @import './components/comp-sectiom-map/map';
