@@ -1,0 +1,26 @@
+@import './base/variables';
+@import './base/normalize';
+@import './base/global-values';
+@import './utils/placeholder';
+@import './components/common/container';
+@import './components/common/logo';
+@import './layout/header';
+@import './components/comp-header/header-mobile';
+@import './components/comp-header/nav';
+@import './components/comp-header/repair-filter';
+@import './components/common/way';
+@import './components/comp-section-repair-services/section-repair-services';
+@import './components/comp-section-repair-services/device';
+@import './components/comp-section-repair-services/services-form';
+@import './components/comp-section-repair-services/service-cost';
+@import './components/comp-sec-repair-advice/life-hack';
+@import './components/comp-section-repair-services/service-map';
+@import './components/comp-section-steps/section-steps';
+@import './components/comp-section-steps/steps';
+
+@import './components/comp-section-advantages/advantages';
+@import './components/comp-sectiom-map/section-map';
+@import './components/comp-sectiom-map/map';
+@import './layout/footer';
+@import './components/comp-footer/footer';
+@import './common';

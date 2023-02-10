@@ -1,0 +1,31 @@
+.section-diagnostics {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.section-diagnostics__title {
+    margin-left: 20px;
+    margin-bottom: 14px;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+
+    color: var(--primary-text-color);
+}
+
+.section-diagnostics__text {
+    margin-left: 20px;
+    margin-bottom: 16px;
+
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: var(--primary-text-color);
+}
+
+.wrapper-diagnostics {
+
+}

@@ -1,0 +1,23 @@
+@import './base/variables';
+@import './base/normalize';
+@import './base/global-values';
+@import './utils/placeholder';
+@import './components/common/container';
+@import './components/common/logo';
+@import './layout/header';
+@import './components/comp-header/header-mobile';
+@import './components/comp-header/nav';
+@import './components/comp-header/repair-filter';
+@import './components/common/way';
+@import './components/comp-sec-repair-advice/section-repair-advice';
+@import './components/comp-sec-repair-advice/life-hack';
+@import './components/comp-modal/feedback-modal';
+
+@import './components/comp-section-phone-repair/list-pages';
+@import './components/comp-section-phone-repair/section-pr__button';
+@import './components/comp-section-promotions/section-promotions';
+@import './components/comp-section-promotions/promotions';
+@import './components/comp-section-advantages/advantages';
+@import './layout/footer';
+@import './components/comp-footer/footer';
+@import './common';

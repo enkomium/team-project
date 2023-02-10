@@ -24,31 +24,45 @@
         </div>
     </div>
     </header>
+
       <main>
-        <include src="./partials/section-device-search.html"></include>
+        <section class="section-device-search">
+          <include src="./partials/section-device-search.html"></include>
+        </section>
+      
+        <section class="section-hero">
+          <include src="./partials/section-hero.html"></include>
+        </section>
+        
+        <section class="section-steps">
+          <h2 class="steps__title">Ремонт вашего гаджета всего за 3 шага</h2>
+          <div class="container">
+            <include src="./partials/section-steps.html"></include>
+          </div>
+        </section>
 
-        <include src="./partials/section-hero.html"></include>
-
-          <section class="section-steps">
-            <div class="container">
-              <include src="./partials/section-steps.html"></include>
-            </div>
-          </section>
-
-          <section class="section-advantages">
+        <section class="section-advantages">
+          <h2 class="section-advantages-title">Haши пpeимущecтвa</h2>
+          <p class="section-advantages-subtitle">Сотни клиентов ежедневно выбирают StоpNFix</p>
             <div class="container">
               <include src="./partials/section-advantages.html"></include>
               <button class="advantages-button" type="submit">Записаться на ремонт</button>
               <button class="advantages-button accent" type="submit">Узнать стоимость</button>
             </div>
-          </section>
+        </section>
             
-
+        <section class="section-promotions">
+          <div class="container">
               <include src="./partials/section-promotions.html"></include>
+          </div>
+        </section>
 
-                <include src="./partials/section-map.html"></include>
+        <section class="section-map">
+          <h2 class="section-map__title">Как нас найти</h2>
+            <include src="./partials/section-map.html"></include>
+         </section>
 
-                  <include src="./partials/footer.html"></include>
+          <include src="./partials/footer.html"></include>
       </main>
   </body>
 </html>

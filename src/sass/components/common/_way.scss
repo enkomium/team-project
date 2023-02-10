@@ -1,4 +1,6 @@
 .way {
+    margin-top: 13px;
+    margin-left: 20px;
 }
 
 .way__link {
@@ -9,10 +11,10 @@
     text-decoration-line: underline;
 
     color: var(--secondary-text-color);
-}
 
-.way__link:last-child {
-    text-decoration: none;
+    &:last-child {
+        text-decoration: none;
+    }
 }
 
 .way__icon {

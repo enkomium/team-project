@@ -1,0 +1,35 @@
+.diagnostics-box {
+
+}
+
+.diagnostics-thumb {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.diagnostics-list {
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 25;
+}
+
+.diagnostics-list__item {
+    margin-bottom: 12px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.diagnostics-list__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+
+    color: var(--primary-text-color);
+}
+
+.diagnostics-list__link-text {
+    text-decoration: none;
+}
