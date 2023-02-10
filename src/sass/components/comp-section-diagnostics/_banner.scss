@@ -1,0 +1,30 @@
+.banner {
+    padding-top: 27px;
+    padding-right: 20px;
+    padding-bottom: 33px;
+    padding-left: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 25px;
+
+    border: 10px solid #AAD9FE;
+    border-radius: 4px;
+}
+
+.banner__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.banner__text {
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ремонт Samsung Galaxy A3 (A300H)</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sass/repair-services.scss" />
+    <link rel="stylesheet" href="./sass/repair-services-item.scss" />
     <script type="module" src="./index.js"></script>
     <script type="module" src="./menu.js"></script>
     <script type="module" src="./mobile-contact.js"></script>
@@ -27,42 +27,24 @@
 
     <main>
       <div class="way">
-        <a class="way__link" href="./phone-repair.html">
+        <a class="way__link" href="./repair-services.html">
             <svg class="way__icon">
               <use href="./images/sprite.svg#strelka-vlevo"></use>
             </svg>
-            Ремонт телефонов Samsung
+            Смена корпуса Samsung Galaxy A3 (A300H)
         </a>
       </div>
 
-      <section class="section-repair-services">
+      <section class="section-repair-service-item">
           <div class="container">
-            <include src="./partials/repair-services/repair-services.html"></include>
+            <include src="./partials/repair-services-item/repair-services-item.html"></include>
           </div>
       </section>
 
-        <section class="section-steps section-steps--repair-services-indent">
+        <section class="section-steps section-steps--repair-services-item-indent">
           <h2 class="steps__title">Ремонт вашего гаджета всего за 3 шага</h2>
           <div class="container">
             <include src="./partials/section-steps.html"></include>
-          </div>
-        </section>
-
-        <section class="section-repair-text">
-          <div class="block-text">
-            <input class="block-text__input" type="checkbox" id="limiter-checker">
-            <div class="block-text__limiter">
-              <p class="block-text__text">Современную жизнь практически невозможно представить
-              себе без использования мобильных устройств - смартфоны помогают находить нужную информацию, 
-              служат средством связи и являются своеобразным. </p>
-              <div class="block-text__bottom"></div>
-            </div>
-            <label class="block-text__label" for="limiter-checker"></label>
-            <a class="section-map__link" href="#top">
-              <svg class="section-map__icon">
-                <use href="./images/sprite.svg#strelka-vverh"></use>
-              </svg>
-            </a>
           </div>
         </section>
 

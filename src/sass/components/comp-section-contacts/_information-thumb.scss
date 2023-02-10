@@ -1,13 +1,8 @@
-.information-thumb {
-
-}
 
 // /////////////////////////----------СПИСОК С ИНФОРМАЦИЕЙ О РАБОТЕ, ВРЕМЕНИ И ЭЛ.ПОЧТЕ----------///////////////////////////////
 
 .information-list {
     @extend %list;
-    display: flex;
-    flex-direction: column;
     margin-top: 16px;
 }
 
@@ -33,10 +28,10 @@
     line-height: 20px;
 
     color: var(--secondary-text-color);
-}
 
-.information-list__text:last-child {
-    margin-bottom: 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .information-list__text-accent {
@@ -53,10 +48,10 @@
     text-decoration: none;
 
     color: var(--secondary-text-color);
-}
 
-.information-list__tel:last-child {
-    margin-bottom: 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .information-list__mail {
@@ -84,7 +79,6 @@
 
 .contacts-address {
     margin-top: 27px;
-    margin-bottom: 181px;
 }
 
 .contact-address__title {
@@ -105,12 +99,11 @@
 // //////////////////////-----------------------ФОТОГРАФИЯ МАГАЗИНА-------------------------------/////////////////////////////////
 
 .contacts-image {
-    position: absolute;
-    left: 0;
-    top: 388px;
     display: block;
-    width: 100%;
     min-height: 171px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 12px;
     background-image: url(../images/section-contacts/b14ee693-dceb-540d-a23a-a98cbc210376.jpg);
     background-size: cover;
     background-position: 50% 50%;

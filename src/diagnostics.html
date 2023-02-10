@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Диагностика смартфонов и телефонов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/diagnostics.scss" />
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./menu.js"></script>
+    <script type="module" src="./mobile-contact.js"></script>
+    <script type="module" src="./submenu.js"></script>
+    <script type="module" src="./backdrop.js"></script>
+    <script type="module" src="./modal-search.js"></script>
+    <script type="module" src="./modal-thanks.js"></script>
+  </head>
+  <body>
+      <header class="header">
+        <div class="container">
+          <include id="top" src="./partials/header-mobile.html"></include>
+          <div class="mobile-menu-nav" id="button-burger" data-menu>
+            <include src="./partials/header-nav.html"></include>
+            <include src="./partials/header-repair-filter.html"></include>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <div class="way">
+        <a class="way__link" href="./repair-services.html">
+            <svg class="way__icon">
+              <use href="./images/sprite.svg#strelka-vlevo"></use>
+            </svg>
+            Ремонт Samsung Galaxy A3 (A300H)
+        </a>
+      </div>
+
+      <section class="section-diagnostics">
+        <h2 class="section-diagnostics__title">Диагностика смартфонов и телефонов</h2>
+        <p class="section-diagnostics__text">Пpoфeccиoнaльный peмoнт зa 20-40 минут.</p>
+        <div class="container">
+            <div class="wrapper-diagnostics">
+                <include src="./partials/diagnostics/section-diagnostics.html"></include>
+            </div>
+        </div>
+      </section>
+
+      <section class="section-steps section-steps--diagnostics-indent">
+        <h2 class="steps__title">Ремонт вашего гаджета всего за 3 шага</h2>
+        <div class="container">
+          <include src="./partials/section-steps.html"></include>
+        </div>
+      </section>
+
+      <include src="./partials/footer.html"></include>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.diagnostics-text-box {
+    margin-bottom: 25px;
+}
+
+.diagnostics-text-box__title {
+    margin-bottom: 20px;
+    
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.19;
+
+    color: var(--rare--text-color);
+}
+
+.diagnostics-text-box__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: var(--rare--text-color);
+}
+
+.diagnostics-text-box__text--upper {
+    margin-top: 10px;
+}
+
+.diagnostics-text-box-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+    color: var(--accent-color);
+}
+
+.diagnostics-text-box-list__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.diagnostics-text-box__text-bold {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.6;
+}
