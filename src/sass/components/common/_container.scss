@@ -72,6 +72,8 @@
         max-height: 300px;
         pointer-events: all;
 
+        overflow-y: scroll;
+
         @media screen and (min-width: 1200px) {
             position: absolute;
         }
