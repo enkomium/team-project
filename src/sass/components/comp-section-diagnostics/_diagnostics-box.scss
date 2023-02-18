@@ -1,10 +1,20 @@
 .diagnostics-box {
-
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 42px;
+    }
 }
 
 .diagnostics-thumb {
     margin-left: -20px;
     margin-right: -20px;
+
+    @media screen and (min-width: 1200px) {
+        width: 350px;
+        height: 242px;
+        margin: 0;
+    }
 }
 
 .diagnostics-list {
@@ -12,6 +22,11 @@
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 25;
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+        padding: 0;
+    }
 }
 
 .diagnostics-list__item {
@@ -26,8 +41,15 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.33;
+    cursor: pointer;
 
     color: var(--primary-text-color);
+
+    transition: color 250ms;
+
+    &:hover {
+        color: var(--accent-color);
+    }
 }
 
 .diagnostics-list__link-text {

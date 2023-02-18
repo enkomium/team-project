@@ -1,6 +1,14 @@
 .way {
     margin-top: 13px;
     margin-left: 20px;
+
+    @media screen and (min-width: 1200px) {
+        width: 1151px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+    }
 }
 
 .way__link {

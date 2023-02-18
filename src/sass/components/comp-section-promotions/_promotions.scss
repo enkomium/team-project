@@ -7,14 +7,26 @@
     border-bottom: 1px solid #D4E4EF;
 
     @extend %list;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
 }
 
 .promotions-nav__item {
     margin-right: 47px;
-}
 
-.promotions-nav__item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 133px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .promotions-nav__link {
@@ -46,6 +58,11 @@
     &:hover::after {
         transform: scale(1);
     }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.16;
+    }
 }
 
 .promotions-nav__active {
@@ -58,12 +75,32 @@
 
     background-color: var(--accent-color);
     border-radius: 2px;
+
+    @media screen and (min-width: 1200px) {
+        left: 313px;
+        width: 137px;
+    }
 }
 
 // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .promotions-list {
     @extend %list;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.promotions-list__item {
+    @media screen and (min-width: 1200px) {
+        width: 352px;
+        margin-right: 27px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .promotions-list__thumb {
@@ -83,9 +120,15 @@
     font-size: 18px;
     line-height: 1.16;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        width: auto;
+        font-size: 20px;
+        line-height: 1.15
+    }
 }
 
-.promotions-list__button {
+.promotions__button {
     display: block;
     width: 177px;
     height: 40px;
@@ -97,8 +140,21 @@
     line-height: 1.14px;
     text-transform: uppercase;
 
+    cursor: pointer;
     border: none;
     border-radius: 4px;
     color: var(--white-color);
     background-color: var(--accent-color);
+
+    transition: background-color 250ms;
+
+    &:hover {
+        background-color: #0060AA;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 40px;
+
+        background-color: var(--accent-color);
+    }
 }

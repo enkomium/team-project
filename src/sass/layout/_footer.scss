@@ -1,5 +1,9 @@
 .footer {
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+        border-top: 2px solid #D4E4EF;
+    }
 }
 
 .footer__text {
@@ -12,4 +16,20 @@
 
     color: var(--secondary-text-color);
     opacity: 0.7;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 18px;
+        margin-left: -20px;
+        font-size: 12px;
+        line-height: 1.16;
+    }
+}
+
+.footer-box-text {
+    @media screen and (min-width: 1200px) {
+        width: 1151px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

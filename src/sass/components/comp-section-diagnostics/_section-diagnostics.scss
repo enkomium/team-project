@@ -1,6 +1,11 @@
 .section-diagnostics {
     padding-top: 20px;
     padding-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 27px;
+        padding-bottom: 26px;
+    }
 }
 
 .section-diagnostics__title {
@@ -12,6 +17,13 @@
     line-height: 1.15;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 
 .section-diagnostics__text {
@@ -20,12 +32,26 @@
 
     font-style: italic;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    font-size: 20px;
+    line-height: 1.15;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+    }
 }
 
 .wrapper-diagnostics {
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
+.section-diagnostics__content {
+    @media screen and (min-width: 1200px) {
+        width: 778px;
+    }
 }

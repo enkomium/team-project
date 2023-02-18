@@ -5,6 +5,20 @@
 
     box-shadow: 0px 0px 10px rgba(0, 37, 74, 0.2);
     border-radius: 4px;
+
+    &--position-absolute {
+        @media screen and (min-width: 1200px) {
+            position: absolute;
+            top: 324px;
+            right: -332px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 300px;
+        height: 370px;
+        margin: 0;
+    }
 }
 
 .service-map__title {
@@ -14,4 +28,9 @@
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 1.16;
+    }
 }

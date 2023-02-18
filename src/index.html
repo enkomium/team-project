@@ -31,11 +31,13 @@
         </section>
       
         <section class="section-hero">
-          <include src="./partials/section-hero.html"></include>
+          <div class="container">
+            <include src="./partials/section-hero.html"></include>
+          </div>
         </section>
         
         <section class="section-steps">
-          <h2 class="steps__title">Ремонт вашего гаджета всего за 3 шага</h2>
+          <h2 class="section-steps__title">Ремонт вашего гаджета всего за 3 шага</h2>
           <div class="container">
             <include src="./partials/section-steps.html"></include>
           </div>
@@ -46,8 +48,10 @@
           <p class="section-advantages-subtitle">Сотни клиентов ежедневно выбирают StоpNFix</p>
             <div class="container">
               <include src="./partials/section-advantages.html"></include>
-              <button class="advantages-button" type="submit">Записаться на ремонт</button>
-              <button class="advantages-button accent" type="submit">Узнать стоимость</button>
+              <div class="advantages-button-thumb">
+                <button class="advantages-button" type="submit">Записаться на ремонт</button>
+                <button class="advantages-button accent" type="submit">Узнать стоимость</button>
+              </div>
             </div>
         </section>
             

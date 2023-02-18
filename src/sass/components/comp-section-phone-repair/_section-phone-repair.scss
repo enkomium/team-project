@@ -1,5 +1,10 @@
 .section-phone-repair {
     padding-bottom: 35px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 22px;
+        padding-bottom: 0;
+    }
 }
 
 .section-phone-repair__title {

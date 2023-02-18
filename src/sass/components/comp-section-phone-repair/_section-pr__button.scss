@@ -16,6 +16,13 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
+
+    transition: background-color 250ms;
+
+    &:hover {
+        background-color: #0060AA;
+    }
 
 }
 
@@ -25,4 +32,10 @@
     margin-left: 14px;
 
     fill: var(--white-color);
+
+    transition: transform 250ms;
+
+    .section-pr__button:hover & {
+        transform: rotate(180deg);
+    }
 }

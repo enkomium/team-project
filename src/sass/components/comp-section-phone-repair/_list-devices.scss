@@ -1,3 +1,16 @@
+.devices-title {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+
+        color: var(--rare--text-color);
+    }
+}
+
 .list-devices {
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +18,11 @@
     @extend %list;
     padding-top: 20px;
     padding-bottom: 55px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
 }
 
 .list-devices__item {
@@ -13,18 +31,70 @@
     min-height: 173px;
     margin-right: 40px;
     margin-bottom: 33px;
+
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        min-width: 162px;
+        min-height: 239px;
+        margin-right: 72px;
+        margin-bottom: 47px;
+
+        transform: scale(1);
+        transition: scale 250ms linear;
+
+        &:nth-child(2n) {
+            margin-right: 72px;
+        }
+
+        &:nth-child(5n) {
+            margin-right: 0;
+        }
+
+        &:nth-last-child(-n + 5) {
+            margin-bottom: 0;
+        }
+    }
 }
 
-.list-devices__item:nth-child(2n) {
-    margin-right: 0;
-}
+.project-card {
+    @media screen and (min-width: 1200px) {
+        min-width: auto;
+        min-height: auto;
 
-.list-devices__item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+        transition: transform 250ms;
+
+        .list-devices__item:hover & {
+            position: absolute;
+            padding-top: 15px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+
+            transform: scale(1.2) translateY(-30px);
+            background-color: var(--white-color);
+
+            box-shadow: 0px 0px 10px rgba(0, 37, 74, 0.2);
+            border-radius: 4px;
+        }
+    }
 }
 
 .project-card__img {
     height: 129px;
+
+    @media screen and (min-width: 1200px) {
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }   
 
 .project-card__link {
@@ -38,10 +108,49 @@
     text-decoration: none;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 1.16;
+
+        pointer-events: none;
+    }
+
 }
 
-.project-card__button {
-    display: none;
+.project-card__link-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    text-decoration: none;
+
+    transition: transform 250ms, background-color 250ms;
+
+    @media screen and (min-width: 1200px) {
+        width: 160px;
+        height: 40px;
+        margin-top: 10px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+
+        color: var(--white-color);
+        background-color: var(--accent-color);
+        border: var(--accent-color);
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #0060AA;
+        }
+
+        .list-devices__item:hover & {
+            transform: scale(1);
+        }
+    }
 }
 
 .red-color {
