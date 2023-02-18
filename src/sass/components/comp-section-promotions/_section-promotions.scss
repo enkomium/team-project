@@ -2,13 +2,22 @@
     padding-top: 33px;
     padding-bottom: 43px;
     background-color: #F5F5F5;
+
+    &--indent {
+        margin-top: 38px;
+        margin-bottom: 22px;
+    }
+
+    &--lower-indentation {
+        margin-bottom: 22px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &--advice {
+            margin-bottom: 57px;
+        }
+    }
 }
 
-.section-promotions--indent {
-    margin-top: 38px;
-    margin-bottom: 22px;
-}
 
-.section-promotions--lower-indentation {
-    margin-bottom: 22px;
-}
+

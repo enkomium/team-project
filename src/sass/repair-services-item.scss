@@ -10,6 +10,8 @@
 @import './components/comp-header/repair-filter';
 @import './components/common/way';
 @import './components/comp-section-repair-services/section-repair-services';
+@import './components/comp-section-repair-services/section-repair-service-item';
+
 @import './components/comp-section-repair-services/device';
 @import './components/comp-section-repair-services/services-form';
 @import './components/comp-section-repair-services/service-cost';
@@ -23,4 +25,7 @@
 @import './components/comp-sectiom-map/map';
 @import './layout/footer';
 @import './components/comp-footer/footer';
+@import './components/comp-footer/footer-information';
+@import './components/comp-footer/footer-box-services';
+@import './vendor/animation';
 @import './common';

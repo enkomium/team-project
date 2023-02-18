@@ -8,10 +8,10 @@
 
 .list-pages__item {
     margin-right: 24px;
-}
 
-.list-pages__item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .list-pages__link {

@@ -1,5 +1,10 @@
 .section-recommendations {
     padding-top: 15px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 22px;
+        padding-bottom: 24px;
+    }
 }
 
 .section-recommendations__title {
@@ -11,4 +16,9 @@
     line-height: 1.16;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        margin-bottom: 34px;
+    }
 }

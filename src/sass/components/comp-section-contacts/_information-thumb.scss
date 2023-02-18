@@ -1,9 +1,14 @@
 
 // /////////////////////////----------СПИСОК С ИНФОРМАЦИЕЙ О РАБОТЕ, ВРЕМЕНИ И ЭЛ.ПОЧТЕ----------///////////////////////////////
+.information-thumb {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 .information-list {
     @extend %list;
-    margin-top: 16px;
 }
 
 .information-list__item {
@@ -25,7 +30,7 @@
 
     font-weight: 400;
     font-size: 17px;
-    line-height: 20px;
+    line-height: 1.17;
 
     color: var(--secondary-text-color);
 
@@ -79,6 +84,10 @@
 
 .contacts-address {
     margin-top: 27px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 48px;
+    }
 }
 
 .contact-address__title {
@@ -86,6 +95,13 @@
     font-weight: 700;
     font-size: 21px;
     line-height: 1.19;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 15px;
+
+        font-size: 30px;
+        line-height: 1.26
+    }
 }
 
 .contact-address__text {
@@ -93,6 +109,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 61px;
+    }
 }
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -107,5 +127,13 @@
     background-image: url(../images/section-contacts/b14ee693-dceb-540d-a23a-a98cbc210376.jpg);
     background-size: cover;
     background-position: 50% 50%;
+
+    @media screen and (min-width: 1200px) {
+        width: 588px;
+        height: 271px;
+        margin: 0;
+
+        border-radius: 10px;
+    }
 }
 // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -3,6 +3,10 @@ body {
     color: var(--primary-text-color);
     font-family: Roboto, Roboto Condensed, sans-serif;
     padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 132px;
+    }
 }
 
 // body.modal-open {
@@ -30,4 +34,14 @@ img {
 
 .none {
     display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.margin-none {
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
 }

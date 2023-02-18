@@ -1,0 +1,38 @@
+.footer-information {
+    @extend %list;
+}
+
+.footer-information__title {
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 17px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.16;
+
+        color: rgba(55, 69, 97, 0.4);
+    }
+}
+
+.footer-information__item {
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 12px;
+    }
+}
+
+.footer-information__link {
+    @media screen and (min-width: 1200px) {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.6;
+        text-decoration: none;
+
+        color: var(--secondary-text-color);
+
+        transition: color 250ms;
+
+    &:hover {
+        color: var(--accent-color);
+        }
+    }
+}

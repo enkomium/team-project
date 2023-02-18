@@ -1,21 +1,45 @@
+.repair-services-wrap {
+    @media screen and (min-width: 1200px) {
+        width: 715px;
+    }
+}
+
 .device {
     margin-top: 23px;
 }
 
-// .device__thumb {
-
-// }
+.device-wrap {
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        width: 778px;
+    }
+}
 
 .device__img {
     height: 160px;
     @extend %marginLR-auto;
+
+    @media screen and (min-width: 1200px) {
+        height: 240px;
+    }
 }
 
 .device__text {
+    margin-top: 13px;
+
     font-weight: 700;
     font-size: 26px;
     line-height: 1.15;
     text-align: center;
 
-    margin-top: 13px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 16px;
+
+        font-size: 36px;
+        line-height: 1.16;
+
+        &--indent {
+            margin-bottom: 26px;
+        }
+    }
 }
