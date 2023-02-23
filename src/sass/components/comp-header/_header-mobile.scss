@@ -1,11 +1,12 @@
 .header-mobile {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     height: 100%;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1199px) {
         display: none;
     }
 }
@@ -37,13 +38,6 @@
         top: 55;
         right: 20;
 
-        transform: scale(0);
-    
-    &.contact-open {
-        position: absolute;
-        top: 55;
-        right: 20;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -58,8 +52,16 @@
 
         box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
 
-        transform: scale(1);
+        transform: scale(0);
         transition: transform 250ms;
+        transform-origin: right top;
+    
+    &.contact-open {
+        position: absolute;
+        top: 55;
+        right: 20;
+
+        transform: scale(1);
     }
 
 }

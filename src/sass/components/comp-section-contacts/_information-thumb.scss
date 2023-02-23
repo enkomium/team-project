@@ -54,6 +54,12 @@
 
     color: var(--secondary-text-color);
 
+    transition: color 250ms linear;
+
+    &:hover {
+        color: var(--accent-color)
+    }
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -69,6 +75,12 @@
     text-decoration: none;
 
     color: var(--secondary-text-color);
+
+    transition: color 250ms linear;
+
+    &:hover {
+        color: var(--accent-color)
+    }
 }
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

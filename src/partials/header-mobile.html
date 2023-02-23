@@ -19,7 +19,25 @@ data-menu-button>
     </svg>
 </button>
 
-<a class="mobile-logo" href="./index.html"><img class="mobile-logo__image" src="./images/logo.png" alt=""></a>
+<a class="mobile-logo" href="./index.html">
+  <!-- Простой вариант -->
+  <img 
+  class="mobile-logo__image"
+  srcset="./images/logo.png 1x, ./images/logo-x2.png 2x"
+  src="./images/logo.png"
+  alt="Логотип">
+
+  <!-- Более правильный вариант -->
+  <!-- <picture>
+    <source srcset="./images/logo.png 1x, ./images/logo-x2.png 2x, ./images/logo-x4.png 4x" media="(min-width: 1200px)">
+    <source srcset="./images/logo.png 1x, ./images/logo-x2.png 2x, ./images/logo-x4.png 4x" media="(min-width: 480px)">
+    <source srcset="./images/logo.png 1x, ./images/logo-x2.png 2x, ./images/logo-x4.png 4x" media="(max-width: 1199px)">
+    <img class="mobile-logo__image"
+    src="./images/logo.png"
+    alt="сотрудник компании"
+  />
+  </picture> -->
+</a>
 
 <button
 class="button-contact contact-open"

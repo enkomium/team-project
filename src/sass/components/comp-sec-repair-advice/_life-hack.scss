@@ -68,6 +68,12 @@
 
     color: var(--secondary-text-color);
 
+    transition: color 250ms linear;
+
+    &:hover {
+        color: var(--accent-color);
+    }
+
     &::before {
         content: " ";
         position: absolute;
