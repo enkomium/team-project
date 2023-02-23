@@ -1,12 +1,16 @@
 .way {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 13px;
-    margin-left: 20px;
 
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    
     @media screen and (min-width: 1200px) {
         width: 1151px;
         margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
         margin-top: 30px;
     }
 }
@@ -19,6 +23,12 @@
     text-decoration-line: underline;
 
     color: var(--secondary-text-color);
+
+    transition: color 250ms linear;
+
+    &:hover {
+        color: var(--accent-color)
+    }
 
     &:last-child {
         text-decoration: none;

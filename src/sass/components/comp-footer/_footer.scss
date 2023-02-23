@@ -97,6 +97,12 @@
 
     color: var(--text-accent-color);
 
+    transition: color 250ms linear;
+
+    &:hover {
+        color: #0060AA;
+    }
+
     @media screen and (min-width: 1200px) {
         margin: 0;
         margin-left: 28px;
@@ -115,6 +121,12 @@
     color: var(--secondary-text-color);
 
     text-decoration: none;
+
+    transition: color 250ms linear;
+
+    &:hover {
+        color: var(--accent-color)
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -199,6 +211,12 @@
 
     color: var(--secondary-text-color);
 
+    transition: color 250ms linear;
+
+    &:hover {
+        color: var(--accent-color)
+    }
+
     @media screen and (min-width: 1200px) {
         margin-bottom: 10px;
     }
@@ -280,11 +298,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+
+    transition: background-color 250ms linear;
+
+    &:hover {
+        background-color: var(--accent-color);   
+    }
 }
 
 .social-list__icon {
     width: 20px;
     height: 17px;
+    fill: var(--accent-color);
+
+    transition: fill 500ms linear;
+
+    .social-list__link:hover & {
+        fill: var(--white-color);
+    }
 }

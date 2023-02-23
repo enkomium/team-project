@@ -16,10 +16,13 @@
     flex-wrap: wrap;
     justify-content: center;
     @extend %list;
+    max-width: 435px;
     padding-top: 20px;
     padding-bottom: 55px;
 
     @media screen and (min-width: 1200px) {
+        max-width: 1111px;
+        height: 705px;
         padding-top: 52px;
         padding-bottom: 52px;
     }
@@ -45,10 +48,9 @@
         min-width: 162px;
         min-height: 239px;
         margin-right: 72px;
-        margin-bottom: 47px;
+        margin-bottom: 10px;
 
         transform: scale(1);
-        transition: scale 250ms linear;
 
         &:nth-child(2n) {
             margin-right: 72px;
@@ -66,13 +68,14 @@
 
 .project-card {
     @media screen and (min-width: 1200px) {
-        min-width: auto;
-        min-height: auto;
+        width: auto;
+        height: 315px;
 
-        transition: transform 250ms;
+        transition: all 250ms;
+        // transition: transform 250ms;
 
         .list-devices__item:hover & {
-            position: absolute;
+            // position: absolute;
             padding-top: 15px;
             padding-right: 20px;
             padding-bottom: 20px;
@@ -92,8 +95,6 @@
 
     @media screen and (min-width: 1200px) {
         height: auto;
-        margin-left: auto;
-        margin-right: auto;
     }
 }   
 
@@ -110,7 +111,7 @@
     color: var(--primary-text-color);
 
     @media screen and (min-width: 1200px) {
-        font-size: 18px;
+        font-size: 19px;
         line-height: 1.16;
 
         pointer-events: none;

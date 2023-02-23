@@ -51,8 +51,6 @@
     border: none;
     cursor: pointer;
 
-
-
     @media screen and (min-width: 1200px) {
         padding: 0;
 
@@ -111,12 +109,10 @@
 
 .submenu {
     display: block;
-    width: 100%;
+    height: auto;
     @extend %list;
     padding-left: 22px;
     padding-right: 46px;
-
-    overflow-y: scroll;
     
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -128,7 +124,6 @@
         padding-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
-        overflow:visible;
     }
 
 }
@@ -252,6 +247,12 @@
 
     text-decoration: none;
 
+    transition: color 250ms linear;
+
+    &:hover {
+        color: var(--accent-color)
+    }
+
     @media screen and (min-width: 1200px) {
         line-height: 1.17;
     }
@@ -293,6 +294,12 @@
     margin-top: 6px;
 
     color: var(--text-accent-color);
+
+    transition: color 250ms linear;
+
+    &:hover {
+        color: #0060AA;
+    }
 
     @media screen and (min-width: 1200px) {
         margin-top: 3px;
