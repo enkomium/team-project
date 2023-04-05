@@ -11,6 +11,32 @@
     }
 }
 
+// .list-devices {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+
+//     @media screen and (min-width: 1200px) {
+//         display: flex;
+//         flex-wrap: wrap;
+//         padding-top: 52px;
+//         padding-bottom: 52px;
+//         margin-right: -72px;
+//         margin-bottom: -10px;
+//     }
+// }
+
+// .list-devices__item {
+
+//     @media screen and (min-width: 1200px) {
+//         flex-basis: calc(100% / 5 - 72px);
+//         margin-right: 72px;
+//         margin-bottom: 10px;
+
+//         transform: scale(1);
+//     }
+// }
+
 .list-devices {
     display: flex;
     flex-wrap: wrap;
