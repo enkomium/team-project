@@ -8,6 +8,7 @@
     margin-left: -20px;
     margin-right: -20px;
 
+    background-color: #93c3e9;
     background-image: url(../images/mobile-hero/mobile-heroX2.jpg);
     background-size: cover;
     background-position: -150px;
@@ -30,6 +31,14 @@
             top: 65px;
             height: 5px;
         }
+    }
+
+    @media screen and (max-width: 340px) {
+        background-position: -225px;
+    }
+
+    @media screen and (min-width: 360px) and (max-width: 376px) {
+        background-position: -180px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -111,6 +120,8 @@
     background-color: var(--accent-color);
     border-radius: 4px;
     cursor: pointer;
+
+    transition: background-color 250ms linear;
 
     &:hover {
         background-color: #0060AA;
